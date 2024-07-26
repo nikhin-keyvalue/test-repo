@@ -1,7 +1,7 @@
 /*!
  * 
- *   @keyvaluesystems/react-stepper v1.0.4
- *   git+https://github.com/KeyValueSoftwareSystems/react-stepper.git
+ *   test-repo v1.0.4
+ *   git+https://github.com/nikhin-keyvalue/test-repo.git
  *
  *   Copyright (c) Keyvalue and project contributors.
  *
