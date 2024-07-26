@@ -1,0 +1,65 @@
+.eachNode {
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    background: #7b7b84;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    position: relative;
+  }
+  .activeStepNode {
+    background: #312ec0;
+  }
+  .inactiveStepNode {
+    opacity: 0.4;
+  }
+  .completedStepNode {
+    background: #312ec0;
+  }
+  .whiteTickImg {
+    object-fit: cover;
+    width: 10px;
+    height: 8px;
+  }
+  .cursorPointer {
+    cursor: pointer;
+  }
+
+  .labelContainer {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__right {
+      left: 44px;
+    }
+    &__left {
+      right: 44px;
+      align-items: end;
+    }
+    .labelTitle {
+      color: #4F4F4F;
+    }
+    .activeLabelTitle {
+      font-weight: 700;
+    }
+    .labelDescription {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 21px;
+      color: #929292;
+    }
+    .activeLabelDescription {
+      color: #676767;
+    }
+  }
