@@ -1,3 +1,4 @@
+'use client';
 import React, { useRef, useEffect, useState } from "react";
 import "./styles.scss";
 import type { IStepProps } from "../stepper/types";
