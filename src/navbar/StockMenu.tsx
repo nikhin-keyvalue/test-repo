@@ -32,7 +32,7 @@ const StockMenuUI = ({
       className="text-inherit"
       title={t("vehicles")}
     >
-      <NavigationItemStock dynamicFilterSubMenu={dynamicFilterSubMenu} />
+      <NavigationItemStock />
     </Link>
   );
 };

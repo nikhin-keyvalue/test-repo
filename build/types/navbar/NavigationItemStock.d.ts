@@ -1,5 +1,2 @@
-import { ReactNode } from "react";
-declare const NavigationItemStock: ({ dynamicFilterSubMenu, }: {
-    dynamicFilterSubMenu: ReactNode;
-}) => JSX.Element;
+declare const NavigationItemStock: () => JSX.Element;
 export default NavigationItemStock;

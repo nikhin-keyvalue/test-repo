@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { Role } from "./types";
 declare const OpportunitiesandDeliveriesMenu: ({ userRoles }: {
     userRoles: Role[];

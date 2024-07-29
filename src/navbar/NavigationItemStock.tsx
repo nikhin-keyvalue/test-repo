@@ -1,8 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import React, { ComponentType, ReactNode, Suspense } from "react";
-import { ErrorBoundary, FallbackProps } from "react-error-boundary";
+import React from "react";
 import { MdOutlineDirectionsCar } from "react-icons/md";
 
 // import DynamicSearchCriteriaFallback from "@/components/search-criteria/DynamicSearchCriteriaFallback";
@@ -16,11 +15,7 @@ import {
   NavigationMenuTrigger,
 } from "./NavigationMenu";
 
-const NavigationItemStock = ({
-  dynamicFilterSubMenu,
-}: {
-  dynamicFilterSubMenu: ReactNode;
-}): JSX.Element => {
+const NavigationItemStock = (): JSX.Element => {
   const t = useTranslations();
   const pathname = usePathname();
   // TODO: Revisit;
@@ -37,18 +32,6 @@ const NavigationItemStock = ({
         </p>
         <div className="custom-scrollbar mr-1 h-[calc(100vh-72px)] overflow-y-auto overflow-x-hidden">
           <StaticFilterSubmenu />
-          <div className="mt-8 w-full">
-            <Suspense
-              fallback={
-                <div className="flex w-full justify-center">
-                  {/* <Spinner /> */}
-                  Loding...
-                </div>
-              }
-            >
-              {dynamicFilterSubMenu}
-            </Suspense>
-          </div>
         </div>
       </NavigationMenuContent>
     </NavigationMenuItem>
