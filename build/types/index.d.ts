@@ -1,2 +1,3 @@
 import Stepper from "./stepper";
-export default Stepper;
+import NavBar from "./navbar/navbar";
+export { Stepper, NavBar };
