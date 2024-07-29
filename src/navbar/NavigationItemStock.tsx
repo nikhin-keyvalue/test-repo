@@ -38,24 +38,16 @@ const NavigationItemStock = ({
         <div className="custom-scrollbar mr-1 h-[calc(100vh-72px)] overflow-y-auto overflow-x-hidden">
           <StaticFilterSubmenu />
           <div className="mt-8 w-full">
-            <ErrorBoundary
-              FallbackComponent={
-                (
-                  <div>Something went wrong!</div>
-                ) as unknown as ComponentType<FallbackProps>
+            <Suspense
+              fallback={
+                <div className="flex w-full justify-center">
+                  {/* <Spinner /> */}
+                  Loding...
+                </div>
               }
             >
-              <Suspense
-                fallback={
-                  <div className="flex w-full justify-center">
-                    {/* <Spinner /> */}
-                    Loding...
-                  </div>
-                }
-              >
-                {dynamicFilterSubMenu}
-              </Suspense>
-            </ErrorBoundary>
+              {dynamicFilterSubMenu}
+            </Suspense>
           </div>
         </div>
       </NavigationMenuContent>
