@@ -1,3 +1,4 @@
+/// <reference types="react" />
 declare const SubMenuItem: ({ label, url, prefetch, onClick, }: {
     label: string;
     url: string;
