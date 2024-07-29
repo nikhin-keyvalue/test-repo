@@ -9,7 +9,7 @@ import { NavigationMenuItem } from './NavigationMenu';
 const NavigationItemInsights = (): JSX.Element => {
   const pathname = usePathname();
   return (
-    <NavigationMenuItem isActive={pathname.startsWith('/insight')}>
+    <NavigationMenuItem isActive={pathname?.startsWith('/insight')}>
       <MdQueryStats size='2rem' />
     </NavigationMenuItem>
   );

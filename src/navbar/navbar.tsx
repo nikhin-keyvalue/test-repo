@@ -1,7 +1,7 @@
 'use-cli'
 
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import {
   MdOutlineBadge,
   MdOutlineCheck,
@@ -27,7 +27,7 @@ import React from "react";
 const NavBar = ({ dynamicFilterSubMenu, user }: NavBarProps): JSX.Element => {
   const roles = user!.authorities;
 
-  const t = useTranslations("navBar");
+  // const t = useTranslations("navBar");
 
   return (
     <div className="hidden md:block">
@@ -38,7 +38,8 @@ const NavBar = ({ dynamicFilterSubMenu, user }: NavBarProps): JSX.Element => {
             href="/dashboard"
             className="text-inherit"
             prefetch={false}
-            title={t("dashboard")}
+            // title={t("dashboard")}
+            title="dashboard"
           >
             <NavigationItemDashboard />
           </Link>
@@ -51,7 +52,8 @@ const NavBar = ({ dynamicFilterSubMenu, user }: NavBarProps): JSX.Element => {
             href="/stockmgmt/dealer/list"
             className="text-inherit"
             prefetch={false}
-            title={t("dealers")}
+            // title={t("dealers")}
+            title="dealers"
           >
             <NavigationMenuItem isActive={false}>
               <MdOutlineStore size="2rem" />
@@ -67,7 +69,8 @@ const NavBar = ({ dynamicFilterSubMenu, user }: NavBarProps): JSX.Element => {
                 href="/relationmgmt/relation/list"
                 className="text-inherit"
                 prefetch={false}
-                title={t("relations")}
+                // title={t("relations")}
+                title="relations"
               >
                 <NavigationMenuItem isActive={false}>
                   <MdOutlinePeopleAlt size="2rem" />
@@ -84,7 +87,8 @@ const NavBar = ({ dynamicFilterSubMenu, user }: NavBarProps): JSX.Element => {
                 href="/relationmgmt/section/list"
                 className="text-inherit"
                 prefetch={false}
-                title={t("trajectories")}
+                // title={t("trajectories")}
+                title="trajectories"
               >
                 <NavigationMenuItem isActive={false}>
                   <MdOutlineRequestQuote size="2rem" />
@@ -98,7 +102,8 @@ const NavBar = ({ dynamicFilterSubMenu, user }: NavBarProps): JSX.Element => {
             <Link
               href="/insight"
               className="text-inherit"
-              title={t("insights")}
+              // title={t("insights")}
+              title="insights"
               prefetch={false}
             >
               <NavigationItemInsights />
@@ -111,7 +116,8 @@ const NavBar = ({ dynamicFilterSubMenu, user }: NavBarProps): JSX.Element => {
               href="/relationmgmt/mytasks"
               className="text-inherit"
               prefetch={false}
-              title={t("mytasks")}
+              // title={t("mytasks")}
+              title="mytasks"
             >
               <NavigationMenuItem isActive={false}>
                 <MdOutlineBadge size="2rem" />
@@ -125,7 +131,8 @@ const NavBar = ({ dynamicFilterSubMenu, user }: NavBarProps): JSX.Element => {
               href="/relationmgmt/task/list"
               className="text-inherit"
               prefetch={false}
-              title={t("tasks")}
+              // title={t("tasks")}
+              title="tasks"
             >
               <NavigationMenuItem isActive={false}>
                 <MdOutlineCheck size="2rem" />
@@ -139,7 +146,8 @@ const NavBar = ({ dynamicFilterSubMenu, user }: NavBarProps): JSX.Element => {
               href="/relationmgmt/guarantee/list"
               className="text-inherit"
               prefetch={false}
-              title={t("guarantees")}
+              // title={t("guarantees")}
+              title="guarantees"
             >
               <NavigationMenuItem isActive={false}>
                 <MdOutlineSettings size="2rem" />

@@ -1,14 +1,15 @@
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 
 import SubMenuItem from "./SubMenuItem";
 import React from "react";
 
 const StaticFilterSubmenu = ({ onClose }: { onClose?: () => void }): JSX.Element => {
-  const t = useTranslations();
+  // const t = useTranslations();
 
   const staticFilters = [
     {
-      label: t("navBar.allVehicles"),
+      // label: t("navBar.allVehicles"),
+      label: "navBar.allVehicles",
       filters: [
         {
           key: "stockStatusList",
@@ -21,7 +22,8 @@ const StaticFilterSubmenu = ({ onClose }: { onClose?: () => void }): JSX.Element
       ],
     },
     {
-      label: t("navBar.expected"),
+      // label: t("navBar.expected"),
+      label: "navBar.expected",
       filters: [
         {
           key: "stockStatusList",
@@ -34,7 +36,8 @@ const StaticFilterSubmenu = ({ onClose }: { onClose?: () => void }): JSX.Element
       ],
     },
     {
-      label: t("navBar.available"),
+      // label: t("navBar.available"),
+      label: "navBar.available",
       filters: [
         {
           key: "stockStatusList",
@@ -47,7 +50,8 @@ const StaticFilterSubmenu = ({ onClose }: { onClose?: () => void }): JSX.Element
       ],
     },
     {
-      label: t("navBar.reserved"),
+      // label: t("navBar.reserved"),
+      label: "navBar.reserved",
       filters: [
         {
           key: "stockStatusList",
@@ -60,7 +64,8 @@ const StaticFilterSubmenu = ({ onClose }: { onClose?: () => void }): JSX.Element
       ],
     },
     {
-      label: t("navBar.soldOrNotForSale"),
+      // label: t("navBar.soldOrNotForSale"),
+      label: "navBar.soldOrNotForSale",
       filters: [
         {
           key: "sellingStatusList",
@@ -69,7 +74,8 @@ const StaticFilterSubmenu = ({ onClose }: { onClose?: () => void }): JSX.Element
       ],
     },
     {
-      label: t("navBar.outOfStock"),
+      // label: t("navBar.outOfStock"),
+      label: "navBar.outOfStock",
       filters: [
         {
           key: "stockStatusList",

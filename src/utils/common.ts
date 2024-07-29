@@ -11,7 +11,7 @@ export const opportunityAndDeliveryRoutes = [
 export const personAndOrganisationRoutes = ['/persons', '/organisations'];
 
 export const isSalesPath = (pathName: string): boolean =>
-  opportunityAndDeliveryRoutes.some((route) => pathName.startsWith(route));
+  opportunityAndDeliveryRoutes.some((route) => pathName?.startsWith(route));
 
 export const isCrmPath = (pathName: string): boolean =>
-  personAndOrganisationRoutes.some((route) => pathName.startsWith(route));
+  personAndOrganisationRoutes.some((route) => pathName?.startsWith(route));

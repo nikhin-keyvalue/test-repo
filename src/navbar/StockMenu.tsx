@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 
 import NavigationItemStock from "./NavigationItemStock";
 import React from "react";
@@ -23,14 +23,15 @@ const StockMenuUI = ({
     ? `/stock?${storedFilters}`
     : "/stock?stockStatusList=IN_STOCK%2CEXPECTED&sellingStatusList=AVAILABLE_FOR_SALE";
 
-  const t = useTranslations("navBar");
+  // const t = useTranslations("navBar");
 
   return (
     <Link
       prefetch={false}
       href={stockURL}
       className="text-inherit"
-      title={t("vehicles")}
+      // title={t("vehicles")}
+      title="vehicles"
     >
       <NavigationItemStock />
     </Link>

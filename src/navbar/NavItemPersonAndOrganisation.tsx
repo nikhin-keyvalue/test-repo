@@ -4,18 +4,18 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import { MdOutlinePeopleAlt } from "react-icons/md";
 
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import { isCrmPath } from "../utils/common";
 
 import {
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuTrigger
+  NavigationMenuTrigger,
 } from "./NavigationMenu";
 import SubMenuItem from "./SubMenuItem";
 
 const NavItemPersonAndOrganisation = (): JSX.Element => {
-  const t = useTranslations();
+  // const t = useTranslations();
   const pathname = usePathname();
 
   return (
@@ -26,17 +26,19 @@ const NavItemPersonAndOrganisation = (): JSX.Element => {
 
       <NavigationMenuContent>
         <p className="my-4 font-kanit text-[1.375rem] font-semibold capitalize">
-          {t("navBar.crm")}
+          {/* {t("navBar.crm")} */}
+          navBar.crm
         </p>
         <div className="custom-scrollbar mr-1 h-[calc(100vh-72px)] overflow-y-auto overflow-x-hidden">
           <SubMenuItem
-            label={t("navBar.persons")}
+            // label={t("navBar.persons")}
+            label="navBar.persons"
             onClick={(): null => null}
             url="/persons"
           />
-
           <SubMenuItem
-            label={t("organisationsListing.title")}
+            // label={t("organisationsListing.title")}
+            label="organisationsListing.title"
             onClick={(): null => null}
             url="/organisations"
           />

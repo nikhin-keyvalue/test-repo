@@ -6,7 +6,7 @@ import { MdOutlineDirectionsCar } from "react-icons/md";
 
 // import DynamicSearchCriteriaFallback from "@/components/search-criteria/DynamicSearchCriteriaFallback";
 // import Spinner from "@/components/Spinner";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 
 import StaticFilterSubmenu from "./StaticFilterSubmenu";
 import {
@@ -16,19 +16,20 @@ import {
 } from "./NavigationMenu";
 
 const NavigationItemStock = (): JSX.Element => {
-  const t = useTranslations();
+  // const t = useTranslations();
   const pathname = usePathname();
   // TODO: Revisit;
 
   return (
-    <NavigationMenuItem isActive={pathname.startsWith("/stock")}>
+    <NavigationMenuItem isActive={pathname?.startsWith("/stock")}>
       <NavigationMenuTrigger className="cursor-pointer">
         <MdOutlineDirectionsCar size="2rem" />
       </NavigationMenuTrigger>
 
       <NavigationMenuContent>
         <p className="my-4 font-kanit text-[1.375rem] font-semibold">
-          {t("navBar.vehicles")}
+          {/* {t("navBar.vehicles")} */}
+          navBar.vehicles
         </p>
         <div className="custom-scrollbar mr-1 h-[calc(100vh-72px)] overflow-y-auto overflow-x-hidden">
           <StaticFilterSubmenu />

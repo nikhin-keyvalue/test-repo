@@ -9,7 +9,7 @@ import { NavigationMenuItem } from './NavigationMenu';
 const NavigationItemDashboard = (): JSX.Element => {
   const pathname = usePathname();
   return (
-    <NavigationMenuItem isActive={pathname.startsWith('/dashboard')}>
+    <NavigationMenuItem isActive={pathname?.startsWith('/dashboard')}>
       <MdOutlineDashboard size='2rem' />
     </NavigationMenuItem>
   );
